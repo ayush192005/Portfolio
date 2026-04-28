@@ -47,7 +47,7 @@ nav {
     display: flex;
 }
 
-nav a {
+.navs {
     font-size: 15px;
     gap: 90px;
     text-decoration: none;
@@ -56,7 +56,7 @@ nav a {
     transition: 0.3s ease-out;
 }
 
-a:hover {
+.navs:hover {
     display: flex;
     align-items: center;
     background-color: black;
@@ -66,12 +66,13 @@ a:hover {
 }
 
 
-#btn-contact {
+.btn-contact {
     font-size: 12px;
     background-color: black;
     font-family: "Sekuya", system-ui;
     color: white;
     border-radius: 50px;
+    text-decoration: none;
     width: 180px;
     cursor: pointer;
     border: none;
@@ -82,7 +83,7 @@ a:hover {
     transition: 0.3s ease-out;
 }
 
-#btn-contact:hover {
+.btn-contact:hover {
     transform: scale(1.1);
 }
 
@@ -97,7 +98,7 @@ a:hover {
 .hero {
     display: flex;
     justify-content: center;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .intro {
@@ -106,8 +107,10 @@ a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+}
 
+.intro h4 {
+    padding-bottom: 40px;
 }
 
 #view-btn {
@@ -122,7 +125,7 @@ a:hover {
 }
 
 .image-section {
-    padding: 30px;
+    padding: 20px;
 }
 
 .image-holder {
@@ -131,13 +134,13 @@ a:hover {
 }
 
 .shape {
-    width: 600px;
-    height: 600px;
+    width: 580px;
+    height: 580px;
     border-radius: 10px;
     background-color: #D9D9D9;
     display: flex;
     justify-content: center;
-    transform: rotate(-5deg);
+    transform: rotate(-3deg);
 }
 
 .shape img {
@@ -147,7 +150,7 @@ a:hover {
 .about {
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 30px 20px;
     background-color: rgb(255, 255, 255);
 }
 
@@ -167,7 +170,7 @@ a:hover {
     align-items: center;
     justify-items: center;
     gap: 20px;
-    padding-top: 40px;
+    padding: 30px;
 }
 
 .avtar {
@@ -198,7 +201,7 @@ a:hover {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 40px;
     padding: 30px;
 }
 
@@ -210,7 +213,7 @@ a:hover {
 
 .banners {
     width: 100%;
-    height: 100px;
+    height: 140px;
     background-color: #27292D;
     border-radius: 20px;
     border: 1px solid white;
@@ -221,7 +224,7 @@ a:hover {
 }
 
 .banners p {
-    font-size: 25x;
+    font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -251,15 +254,16 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     padding: 30px;
 }
 
 .project-cards {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #DCDCDC;
     border-radius: 20px;
+    border: 1px solid black;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -295,8 +299,130 @@ h1 {
     gap: 20px;
 }
 
-.contact{
+.contact {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     padding: 30px 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-details {
+    padding: 20px 10px;
+    display: flex;
+    /* align-items: center; */
+    gap: 30px;
+    flex-direction: column;
+    max-width: 1300px;
+}
+
+.icon-value,
+p {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.icon-value a:hover {
+    background-color: white;
+    color: blue;
+}
+
+.footer-section {
+    background-color: black;
+    height: 400px;
+}
+
+/* ANIMATIONS */
+
+.autoShow {
+    animation: text-appear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes text-appear {
+    from {
+        opacity: 0%;
+        transform: translateY(100px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.autoShow2 {
+    animation: logo both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 100vh;
+}
+
+@keyframes logo {
+    from {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.autoShowpara {
+    animation: about-text both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50vh ;
+}
+
+@keyframes about-text {
+    from {
+        opacity: 0%;
+        transform: translateX(50px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.autoShowleft-right {
+    animation: banner both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 50vh;
+}
+
+@keyframes banner {
+    from {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.autoShowright-left {
+    animation: about-text both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 50vh ;
+}
+
+@keyframes about-text {
+    from {
+        opacity: 0%;
+        transform: translateX(50px);
+    }   
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
