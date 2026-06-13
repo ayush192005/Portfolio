@@ -11,6 +11,7 @@ html {
 body {
     background-color: #EFEFEF;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -98,7 +99,6 @@ nav {
 .hero {
     display: flex;
     justify-content: center;
-    /* padding: 50px; */
 }
 
 .intro {
@@ -131,29 +131,35 @@ nav {
 }
 
 .image-section {
-    padding: 20px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .image-holder {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
 }
 
 .shape {
     width: 580px;
-    height: 580px;
-    border-radius: 10px;
+    aspect-ratio: 1 / 1;
     background-color: #D9D9D9;
-    display: flex;
-    justify-content: center;
-    transform: rotate(-3deg);
-}
-
-.shape img {
-    height: 600px;
+    transform: rotate(-2deg);
+    position: relative;
+    top: 60px;
+    z-index: 1;
 }
 
 .about {
+    position: relative;
+    margin-top: -50px;
+    z-index: 2;
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 30px 20px;
@@ -191,34 +197,33 @@ nav {
 
 .about-grid p {
     font-size: 26px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .skills {
-    margin: 0 auto;
-    max-width: 1200px;
     width: 100%;
     background-color: black;
     padding: 40px 20px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
 }
 
-.skill-banners{
+.skill-banners {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 40px;
-    padding: 30px;
 }
 
 .skill-banners h1 {
-text-align: center;
+    text-align: center;
 }
 
 .banners {
     box-sizing: border-box;
     width: 100%;
-    height: 160px;
+    min-height: 160px;
     background-color: #27292D;
     border-radius: 20px;
     border: 1px solid white;
@@ -230,11 +235,11 @@ text-align: center;
 
 .banners p {
     font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .banners h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .tag {
@@ -242,25 +247,25 @@ text-align: center;
     background-color: #CEEC25;
     color: rgb(0, 0, 0);
     border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
 }
 
 .project {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 1200px;
     padding: 30px 20px;
     background-color: white;
 }
 
 .project-banners {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 30px;
-    padding: 30px;
+    text-align: center;
+    gap: 40px;
+    width: 1200px;
 }
 
 .project-banners h1 {
@@ -269,21 +274,17 @@ text-align: center;
 
 .project-cards {
     box-sizing: border-box;
-    width: 100%;
-    height: 150px;
+    max-width: 1200px;
+    min-height: 160px;
     background-color: #DCDCDC;
     border-radius: 20px;
     border: 1px solid black;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .education {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
     background-color: black;
     padding: 40px 20px;
     color: #ffffff;
@@ -291,9 +292,11 @@ text-align: center;
 
 .education-banner {
     display: flex;
+    /* justify-content: center; */
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    width: 100%;
 }
 
 .education-banner h1 {
@@ -302,15 +305,13 @@ text-align: center;
 
 .education-card {
     box-sizing: border-box;
-    width: 100%;
-    height: 150px;
+    width: 80%;
+    min-height: 170px;
     background-color: #27292D;
     border-radius: 20px;
     border: 1px solid white;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
 }
 
 .contact {
@@ -328,7 +329,7 @@ text-align: center;
 }
 
 .contact-container h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .contact-details {
@@ -356,6 +357,7 @@ p {
 .footer-section {
     background-color: black;
     height: 400px;
+    width: 100%;
 }
 
 /* ANIMATIONS */
