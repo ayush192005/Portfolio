@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 100%;
 }
@@ -201,7 +201,6 @@ nav {
 }
 
 .skills {
-    width: 100%;
     background-color: black;
     padding: 40px 20px;
     color: #ffffff;
@@ -255,7 +254,6 @@ nav {
 .project {
     display: flex;
     justify-content: center;
-    width: 100%;
     padding: 30px 20px;
     background-color: white;
 }
@@ -284,7 +282,8 @@ nav {
 }
 
 .education {
-    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: black;
     padding: 40px 20px;
     color: #ffffff;
@@ -292,11 +291,9 @@ nav {
 
 .education-banner {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     gap: 30px;
-    padding: 30px;
-    width: 100%;
+    width: 1200px;
 }
 
 .education-banner h1 {
@@ -305,19 +302,17 @@ nav {
 
 .education-card {
     box-sizing: border-box;
-    width: 80%;
+    max-width: 1200px;
     min-height: 170px;
     background-color: #27292D;
     border-radius: 20px;
     border: 1px solid white;
     padding: 20px;
-
 }
 
 .contact {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     padding: 30px 20px;
     background-color: white;
 }
@@ -333,7 +328,6 @@ nav {
 }
 
 .contact-details {
-    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
