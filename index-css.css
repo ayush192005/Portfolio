@@ -221,32 +221,38 @@ nav {
     margin-bottom: 50px;
 }
 
+.tags i{
+    font-size: 20px;
+}
+
 .skill-banners {
     display: grid;
     grid-template-columns: 450px 450px;
     grid-template-rows: 300px 300px;
     gap: 25px;
-    
+
 }
 
 .banners {
     background-color: #0d1217;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.301);
-    
+    border-bottom: 4px solid #ceec255d;
+
 }
 
 .card-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 30px 20px 30px;
     gap: 20px;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
 
 }
 
-.card-header h2{
-    font-size: 16px;
+.card-header h2 {
+    font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -257,9 +263,31 @@ nav {
     font-weight: bold;
     background-color: #0e1417;
     border: 1px solid rgba(255, 255, 255, 0.301);
-    color:  #CEEC25;
+    color: #CEEC25;
 }
 
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title .dot {
+    color: #CEEC25;
+    font-size: 7px;
+}
+
+.title span {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.452);
+    font-size: 13px;
+}
 
 .tag {
     padding: 10px;
