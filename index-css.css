@@ -227,8 +227,8 @@ nav {
 
 .skill-banners {
     display: grid;
-    grid-template-columns: 490px 490px;
-    grid-template-rows: 330px 330px;
+     grid-template-columns: repeat(2, 3fr);
+   grid-auto-rows: minmax(330px, auto);
     gap: 25px;
 }
 
@@ -658,6 +658,11 @@ p {
         font-size: 1.3rem;
     }
 
+    .skill-banners {
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 @media (max-width:768px) {
@@ -676,6 +681,14 @@ p {
 
     .view-btn {
         font-size: 1rem;
+    }
+     .about-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-grid p {
+        font-size: 1.4rem;
     }
 
     .about-grid p {
@@ -706,35 +719,27 @@ p {
         font-size: 0.78rem;
     }
 
-    .about-grid {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about-grid p {
-        font-size: 1.4rem;
-    }
 
 
 }
 
 @media (max-width:390px) {
     .intro h1 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     .intro h4 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
 }
 
 @media (max-width:320px) {
     .intro h1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .intro h4 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
 }
