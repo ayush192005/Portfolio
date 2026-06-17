@@ -369,7 +369,7 @@ nav {
     height: 6px;
 }
 
-.progress-area #percent {
+.progress-area .percent {
     width: 40px;
 }
 
