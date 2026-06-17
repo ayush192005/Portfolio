@@ -1,3 +1,7 @@
+/* =========================
+   Global Styles
+========================= */
+
 * {
     margin: 0%;
     padding: 0%;
@@ -19,6 +23,9 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+/* =========================
+   Header Section
+========================= */
 
 header {
     display: flex;
@@ -101,6 +108,9 @@ nav {
     font-weight: bold;
 }
 
+/* =========================
+   Hero Section
+========================= */
 .hero {
     display: flex;
     justify-content: center;
@@ -163,6 +173,10 @@ nav {
     z-index: 1;
 }
 
+/* =========================
+   About Section
+========================= */
+
 .about {
     position: relative;
     margin-top: -50px;
@@ -208,6 +222,9 @@ nav {
     align-items: center;
 }
 
+/* =========================
+   Skill Section
+========================= */
 
 .skills {
     background-color: black;
@@ -422,6 +439,9 @@ nav {
 }
 
 
+/* =========================
+   Project Section
+========================= */
 
 .project {
     display: flex;
@@ -482,6 +502,10 @@ nav {
     padding: 20px;
 }
 
+/* =========================
+   Contact Section
+========================= */
+
 .contact {
     display: flex;
     justify-content: center;
@@ -519,6 +543,10 @@ p {
     background-color: white;
     color: blue;
 }
+
+/* =========================
+   Footer Section
+========================= */
 
 .footer-section {
     background-color: black;
@@ -617,6 +645,11 @@ p {
         transform: translateX(0);
     }
 }
+
+/* =======================
+    Responsive Design
+  ========================
+*/
 
 @media (max-width:1280px) {
     .intro h1 {
