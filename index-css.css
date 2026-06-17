@@ -107,15 +107,18 @@ nav {
 }
 
 .intro {
+    padding: 0px 30px;
     font-family: "Sekuya", system-ui;
     font-size: 3.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .intro h4 {
     padding-bottom: 40px;
+    text-align: center;
 }
 
 .view-btn {
@@ -227,11 +230,9 @@ nav {
 
 .skill-banners {
     display: grid;
-     grid-template-columns: repeat(2, 3fr);
-   grid-auto-rows: minmax(330px, auto);
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 25px;
 }
-
 .banners {
     background-color: #0d1217;
     border-radius: 20px;
@@ -285,7 +286,6 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.301);
     color: #CEEC25;
 }
-
 
 .logo-text {
     display: flex;
@@ -618,6 +618,17 @@ p {
     }
 }
 
+@media (max-width:1280px) {
+    .intro h1 {
+        font-size: 5rem;
+    }
+
+    .intro h4 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width:1024px) {
     header {
         padding: 0px;
@@ -659,9 +670,8 @@ p {
     }
 
     .skill-banners {
-        grid-template-columns: 1fr;
+        padding: 20px;
     }
-
 
 }
 
@@ -671,18 +681,19 @@ p {
     }
 
     .intro h1 {
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
 
     .intro h4 {
-        font-size: 1.3rem;
+        font-size: 2.2rem;
         padding-bottom: 20px;
     }
 
     .view-btn {
         font-size: 1rem;
     }
-     .about-grid {
+
+    .about-grid {
         display: flex;
         flex-direction: column;
     }
@@ -704,15 +715,20 @@ p {
         width: 90px;
         height: 118px;
     }
+
+    .skill-banners {
+        grid-template-columns: 1fr;
+
+    }
 }
 
 @media (max-width:480px) {
     .intro h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .intro h4 {
-        font-size: 1rem;
+        font-size: 1.9rem;
     }
 
     .view-btn {
@@ -720,26 +736,8 @@ p {
     }
 
 
-
 }
 
-@media (max-width:390px) {
-    .intro h1 {
-        font-size: 1.5rem;
-    }
+@media (max-width:390px) {}
 
-    .intro h4 {
-        font-size: 0.8rem;
-    }
-
-}
-
-@media (max-width:320px) {
-    .intro h1 {
-        font-size: 1rem;
-    }
-
-    .intro h4 {
-        font-size: 0.6rem;
-    }
-}
+@media (max-width:320px) {}
