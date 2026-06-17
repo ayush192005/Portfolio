@@ -529,8 +529,7 @@ nav {
     gap: 30px;
 }
 
-.icon-value,
-p {
+.icon-value p {
     display: flex;
     align-items: center;
     justify-content: left;
