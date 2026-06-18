@@ -23,6 +23,7 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+
 /* =========================
    Header Section
 ========================= */
@@ -247,14 +248,21 @@ nav {
 
 .skill-banners {
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px;
 }
+
+.skill-banners p {
+    font-family: 'Poppins', sans-serif;
+}
+
 .banners {
     background-color: #0d1217;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.301);
     border-bottom: 4px solid #ceec255d;
+    height: 100%;
+    width: min(100%, 320px);
 }
 
 .card-header {
@@ -281,28 +289,11 @@ nav {
     color: #CEEC25;
 }
 
-.card-header3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px 10px 30px;
-    gap: 20px;
-}
-
 .card-header3 h2 {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
 }
 
-.card-header3 .code-icon {
-    font-size: 30px;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: bold;
-    background-color: #0e1417;
-    border: 1px solid rgba(255, 255, 255, 0.301);
-    color: #CEEC25;
-}
 
 .logo-text {
     display: flex;
@@ -329,14 +320,6 @@ nav {
 
 .progress-section {
     padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-evenly;
-}
-
-.progress-section3 {
-    padding: 10px 30px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -416,13 +399,6 @@ nav {
     margin-top: 15px;
 }
 
-.tags3 {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-}
-
 .tag {
     padding: 13px;
     background-color: #CEEC25;
@@ -438,6 +414,9 @@ nav {
     justify-content: center;
 }
 
+.tool {
+    margin-top: 20px;
+}
 
 /* =========================
    Project Section
@@ -702,7 +681,7 @@ nav {
     }
 
     .skill-banners {
-        padding: 20px;
+        padding: 10px;
     }
 
 }
@@ -749,10 +728,13 @@ nav {
     }
 
     .skill-banners {
-        grid-template-columns: 1fr;
-
+        padding: 0px;
+        grid-template-columns: repeat(1, 3fr);
     }
+
+
 }
+
 
 @media (max-width:480px) {
     .intro h1 {
@@ -770,6 +752,20 @@ nav {
 
 }
 
-@media (max-width:390px) {}
+@media (max-width:390px) {
+
+    .skill-banners {
+        padding: 0px;
+    }
+
+    .card-header {
+        padding: 10px 20px 10px 20px;
+
+    }
+
+    .progress-section {
+        padding: 10px 20px;
+    }
+}
 
 @media (max-width:320px) {}
