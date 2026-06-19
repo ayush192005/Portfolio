@@ -262,7 +262,6 @@ nav {
     border: 1px solid rgba(255, 255, 255, 0.301);
     border-bottom: 4px solid #ceec255d;
     height: 100%;
-    width: min(100%, 320px);
 }
 
 .card-header {
@@ -676,8 +675,16 @@ nav {
         padding: 0px;
     }
 
+    .about h1 {
+        font-size: 1.7rem;
+    }
+
     .about-grid p {
         font-size: 1.3rem;
+    }
+
+    .skills h1 {
+        font-size: 1.7rem;
     }
 
     .skill-banners {
@@ -704,6 +711,10 @@ nav {
         font-size: 1rem;
     }
 
+    .about h1 {
+        font-size: 1.3rem;
+    }
+
     .about-grid {
         display: flex;
         flex-direction: column;
@@ -727,11 +738,19 @@ nav {
         height: 118px;
     }
 
-    .skill-banners {
-        padding: 0px;
-        grid-template-columns: repeat(1, 3fr);
+    .skills h1 {
+        font-size: 1.4rem;
     }
 
+    .skill-banners {
+        padding: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+
+    .banners {
+        width: 100%;
+    }
 
 }
 
@@ -749,6 +768,15 @@ nav {
         font-size: 0.78rem;
     }
 
+    .skill-banners {
+        /* padding: 10px; */
+        width: 100%;
+    }
+
+    .banners {
+        width: 100%;
+    }
+
 
 }
 
@@ -756,8 +784,12 @@ nav {
 
     .skill-banners {
         padding: 0px;
+        width: 100%;
     }
 
+    .banners {
+        width: 100%;
+    }
     .card-header {
         padding: 10px 20px 10px 20px;
 
@@ -766,6 +798,8 @@ nav {
     .progress-section {
         padding: 10px 20px;
     }
+
+
 }
 
 @media (max-width:320px) {}
