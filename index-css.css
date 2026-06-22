@@ -444,6 +444,7 @@ nav {
 }
 
 .project-banners h1 {
+    font-size: 32px;
     font-family: "Sekuya", system-ui;
 }
 
@@ -460,7 +461,7 @@ nav {
 }
 
 .project-number h1 {
-    color: #b7d605;
+    color: #a1be01;
 }
 
 .project-details {
@@ -541,6 +542,8 @@ nav {
 }
 
 .education-banner h1 {
+    font-size: 32px;
+    font-family: "Sekuya", system-ui;
     text-align: center;
 }
 
