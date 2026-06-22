@@ -5,7 +5,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Sekuya", system-ui;
+    box-sizing: border-box;
 }
 
 html {
@@ -52,6 +52,7 @@ header {
     color: rgb(0, 0, 0);
     border-radius: 50px;
     font-size: 2rem;
+    font-family: "Sekuya", system-ui;
 }
 
 nav {
@@ -59,6 +60,7 @@ nav {
 }
 
 .navs {
+    font-family: "Sekuya", system-ui;
     font-size: 15px;
     gap: 90px;
     text-decoration: none;
@@ -107,6 +109,7 @@ nav {
     color: rgb(0, 0, 0);
     border-radius: 50px;
     font-weight: bold;
+    font-size: 20px;
 }
 
 /* =========================
@@ -197,6 +200,7 @@ nav {
 .about-content h1 {
     display: flex;
     justify-content: center;
+    font-family: "Sekuya", system-ui;
 }
 
 .about-grid {
@@ -238,6 +242,7 @@ nav {
 }
 
 .skills h1 {
+    font-family: "Sekuya", system-ui;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -250,6 +255,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    width: 100%;
+    max-width: 57%;
 }
 
 .skill-banners p {
@@ -406,7 +413,7 @@ nav {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     cursor: pointer;
-    width: 30px;
+    width: 60px;
     text-align: center;
     font-size: 20px;
     display: flex;
@@ -433,23 +440,90 @@ nav {
     flex-direction: column;
     text-align: center;
     gap: 40px;
-    width: 1200px;
+    width: 1100px;
 }
 
 .project-banners h1 {
-    text-align: center;
+    font-family: "Sekuya", system-ui;
 }
 
 .project-cards {
     box-sizing: border-box;
     max-width: 1200px;
     min-height: 160px;
-    background-color: #DCDCDC;
-    border-radius: 20px;
-    border: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
     padding: 20px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
 }
+
+.project-number h1 {
+    color: #b7d605;
+}
+
+.project-details {
+    max-width: 400px;
+    text-align: start;
+    display: flex;
+    gap: 40px;
+}
+
+.project-details h4 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.project-details p {
+    line-height: 1.8;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-image {
+    width: 40%;
+    display: flex;
+    justify-content: end;
+
+}
+
+.project-image img {
+    width: 300px;
+    height: 15vh;
+    border-radius: 15px;
+
+}
+
+.projects-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.projects-icons img {
+    width: 24px;
+}
+
+
+.arrow-button a {
+    font-size: 20px;
+    height: 40px;
+    padding: 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   Education Section
+========================= */
 
 .education {
     display: flex;
@@ -689,6 +763,7 @@ nav {
 
     .skill-banners {
         padding: 10px;
+        max-width: 100%;
     }
 
 }
@@ -752,6 +827,11 @@ nav {
         width: 100%;
     }
 
+    .project-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 
@@ -771,35 +851,105 @@ nav {
     .skill-banners {
         /* padding: 10px; */
         width: 100%;
+        max-width: 1200px;
     }
 
     .banners {
         width: 100%;
     }
 
-
 }
+
 
 @media (max-width:390px) {
 
     .skill-banners {
-        padding: 0px;
-        width: 100%;
+        width: 95%;
+    }
+
+    .title span {
+        font-size: 0.7rem;
+
     }
 
     .banners {
         width: 100%;
+        max-width: 100%;
     }
-    .card-header {
-        padding: 10px 20px 10px 20px;
 
+    .card-header {
+        padding: 10px 15px;
     }
 
     .progress-section {
-        padding: 10px 20px;
+        padding: 10px 15px;
     }
 
+    .progress-area {
+        gap: 10px;
+    }
+
+    .progress-area p {
+        width: 45px;
+        font-size: 0.6rem;
+    }
+
+    .logo-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .percent {
+        font-size: 12px;
+    }
+
+    .tag {
+        width: 40px;
+    }
 
 }
 
-@media (max-width:320px) {}
+@media (max-width:320px) {
+    .skill-banners {
+        width: 100%;
+    }
+
+    .title span {
+        font-size: 0.6rem;
+    }
+
+    .banners {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-header {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .progress-section {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .progress-area {
+        gap: 10px;
+    }
+
+    .progress-area p {
+        width: 30px;
+        font-size: 0.6rem;
+    }
+
+    .logo-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .percent p {
+        font-size: 12px;
+    }
+
+    .tag {
+        width: 40px;
+    }
+}
