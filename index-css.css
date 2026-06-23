@@ -444,7 +444,7 @@ nav {
 }
 
 .project-banners h1 {
-    font-size: 32px;
+    font-size: 22px;
     font-family: "Sekuya", system-ui;
 }
 
@@ -461,6 +461,7 @@ nav {
 }
 
 .project-number h1 {
+    font-size: 26px;
     color: #a1be01;
 }
 
@@ -472,11 +473,12 @@ nav {
 }
 
 .project-details h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
 .project-details p {
+    font-size: 12px;
     line-height: 1.8;
 }
 
@@ -496,7 +498,6 @@ nav {
     width: 300px;
     height: 15vh;
     border-radius: 15px;
-
 }
 
 .projects-icons {
@@ -507,7 +508,6 @@ nav {
 .projects-icons img {
     width: 24px;
 }
-
 
 .arrow-button a {
     font-size: 20px;
@@ -716,9 +716,9 @@ nav {
     Responsive Design
   ========================
 */
-@media (max-width:1366px) {
-      .intro h1 {
-        font-size: 5rem;
+@media (max-width:1919px) {
+       .intro h1 {
+        font-size: 4rem;
     }
 
     .intro h4 {
