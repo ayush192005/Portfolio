@@ -35,7 +35,7 @@ header {
 }
 
 .navigation-section {
-    width: 70%;
+    width: 100%;
     background-color: white;
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -62,7 +62,6 @@ nav {
 .navs {
     font-family: "Sekuya", system-ui;
     font-size: 15px;
-    gap: 90px;
     text-decoration: none;
     padding: 20px;
     color: #8e8e8e;
@@ -128,6 +127,7 @@ nav {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
 .intro h4 {
@@ -154,6 +154,7 @@ nav {
 
 .image-section {
     width: 100%;
+    max-width: 100%;
     padding: 40px;
     display: flex;
     justify-content: center;
@@ -168,7 +169,7 @@ nav {
 }
 
 .shape {
-    width: 50%;
+    width: 100%;
     aspect-ratio: 1 / 1;
     background-color: #D9D9D9;
     transform: rotate(-2deg);
@@ -255,8 +256,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    width: 100%;
-    max-width: 57%;
+    /* width: 60%; */
+    /* max-width: 40%; */
 }
 
 .skill-banners p {
@@ -430,27 +431,27 @@ nav {
 
 .project {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 30px 20px;
     background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: "Sekuya", system-ui;
 }
 
 .project-banners {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    max-width: 1200px;
+    justify-content: space-between;
     gap: 40px;
-    width: 1100px;
-}
-
-.project-banners h1 {
-    font-size: 22px;
-    font-family: "Sekuya", system-ui;
 }
 
 .project-cards {
+    width: 100%;
     box-sizing: border-box;
-    max-width: 1200px;
+    /* max-width: 100%; */
     min-height: 160px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.199);
     padding: 20px;
@@ -469,7 +470,7 @@ nav {
     max-width: 400px;
     text-align: start;
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 
 .project-details h4 {
@@ -478,6 +479,7 @@ nav {
 }
 
 .project-details p {
+    width: 90%;
     font-size: 12px;
     line-height: 1.8;
 }
@@ -486,6 +488,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    width: 80%;
 }
 
 .project-image {
@@ -531,7 +534,7 @@ nav {
     border-radius: 999px;
     display: flex;
     align-items: center;
-  
+
 }
 
 /* =========================
@@ -717,7 +720,7 @@ nav {
   ========================
 */
 @media (max-width:1919px) {
-       .intro h1 {
+    .intro h1 {
         font-size: 4rem;
     }
 
@@ -725,19 +728,25 @@ nav {
         font-size: 3rem;
         padding-bottom: 20px;
     }
-    .arrow-button2{
-          display: none;
+
+    .arrow-button2 {
+        display: none;
     }
-    
+
 }
+
 @media (max-width:1280px) {
     .intro h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .intro h4 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         padding-bottom: 20px;
+    }
+
+    .skill-banners {
+        max-width: 100%;
     }
 }
 
@@ -854,20 +863,28 @@ nav {
     .banners {
         width: 100%;
     }
-    .project-cards{
-        display: flex;
-        flex-direction: column;
+
+    .project-banners {
+        width: 100%;
     }
 
-    .arrow-button{
+    .project-cards {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .project-details {
+        /* padding: 0px 40px; */
+    }
+
+    .arrow-button {
         display: none;
     }
 
-       .arrow-button2{
+    .arrow-button2 {
         display: block;
     }
-  
-
 
 }
 
@@ -894,8 +911,13 @@ nav {
         width: 100%;
     }
 
-}
+    .project-details {
+        gap: 30px;
+    }
 
+
+
+}
 
 @media (max-width:390px) {
 
@@ -987,5 +1009,10 @@ nav {
 
     .tag {
         width: 40px;
+    }
+
+    .project-details {
+
+        gap: 10px;
     }
 }
