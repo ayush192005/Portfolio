@@ -256,8 +256,8 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-    /* width: 60%; */
-    /* max-width: 40%; */
+    margin: 20px;
+ 
 }
 
 .skill-banners p {
@@ -435,23 +435,28 @@ nav {
     justify-content: center;
     padding: 30px 20px;
     background-color: white;
-    text-align: center;
-    font-size: 22px;
     font-family: "Sekuya", system-ui;
+}
+
+.project h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .project-banners {
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
     justify-content: space-between;
     gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .project-cards {
-    width: 100%;
-    box-sizing: border-box;
-    /* max-width: 100%; */
+    /* width: 100%; */
     min-height: 160px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.199);
     padding: 20px;
@@ -542,36 +547,69 @@ nav {
 ========================= */
 
 .education {
+     /* width: 100%; */
     display: flex;
     justify-content: center;
     background-color: black;
     padding: 40px 20px;
     color: #ffffff;
+    flex-direction: column;
+
 }
+.education h1 {
+    font-size: 20px;
+    font-family: "Sekuya", system-ui;
+    text-align: center;
+    margin-bottom: 20px ;
+}
+
 
 .education-banner {
     display: flex;
-    flex-direction: column;
     gap: 30px;
-    width: 1200px;
+    justify-content: center;
 }
 
-.education-banner h1 {
-    font-size: 32px;
-    font-family: "Sekuya", system-ui;
+.card-holder {
+    display: flex;
+    box-sizing: border-box;
+
+  
+}
+.education-content{
+    width: 100%;
+    display: flex;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
 }
-
-.education-card {
-    box-sizing: border-box;
-    max-width: 1200px;
-    min-height: 170px;
-    background-color: #27292D;
-    border-radius: 20px;
-    border: 1px solid white;
+.education-icons {
+    height: 30px;
+    width: 30px;
     padding: 20px;
+    border-radius: 999px;
+    background-color: greenyellow;
+      display: flex;
+    justify-content: center;
 }
 
+.cards{
+    display: flex;
+     justify-content: center;
+     gap: 30px;
+}
+.education-cards{
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    background-color: white;
+   
+   
+
+}
 /* =========================
    Contact Section
 ========================= */
