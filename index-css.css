@@ -31,11 +31,10 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 0px 0px 0px;
 }
 
 .navigation-section {
-    width: 100%;
     background-color: white;
     border-radius: 100px;
     border: 1px solid rgba(0, 0, 0, 0.247);
@@ -120,7 +119,7 @@ nav {
 }
 
 .intro {
-    padding: 0px 30px;
+    padding: 50px 30px 0px 30px;
     font-family: "Sekuya", system-ui;
     font-size: 3.5rem;
     display: flex;
@@ -154,8 +153,6 @@ nav {
 
 .image-section {
     width: 100%;
-    max-width: 100%;
-    padding: 40px;
     display: flex;
     justify-content: center;
 }
@@ -163,13 +160,15 @@ nav {
 .image-holder {
     position: relative;
     width: 100%;
-    max-width: 1200px;
+    height: 70%;
     display: flex;
     justify-content: center;
+    /* margin-top:60px; */
 }
 
 .shape {
-    width: 100%;
+    width: 60%;
+    /* height: 300px; */
     aspect-ratio: 1 / 1;
     background-color: #D9D9D9;
     transform: rotate(-2deg);
