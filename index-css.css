@@ -46,12 +46,12 @@ header {
 }
 
 .navigation-section h2 {
-    padding: 10px 24px;
     background-color: #CEEC25;
     color: rgb(0, 0, 0);
     border-radius: 50px;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-family: "Sekuya", system-ui;
+    padding: 10px 24px;
 }
 
 nav {
@@ -142,7 +142,7 @@ nav {
     background-color: #CEEC25;
     border: none;
     color: rgb(0, 0, 0);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: "Sekuya", system-ui;
     transition: 0.3s ease-out;
 }
@@ -152,29 +152,35 @@ nav {
 }
 
 .image-section {
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     justify-content: center;
 }
 
 .image-holder {
     position: relative;
-    width: 100%;
+    width: 1200px;
     height: 70%;
     display: flex;
     justify-content: center;
-    /* margin-top:60px; */
 }
 
 .shape {
-    width: 60%;
-    /* height: 300px; */
+    width: 50%;
     aspect-ratio: 1 / 1;
     background-color: #D9D9D9;
     transform: rotate(-2deg);
     position: relative;
-    top: 60px;
+    top: 70px;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.shape img{
+width: 100%;
+
 }
 
 /* =========================
@@ -812,7 +818,7 @@ nav {
     }
 
     .intro h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .intro h4 {
@@ -843,12 +849,16 @@ nav {
 }
 
 @media (max-width:768px) {
+
+    .hero{
+        margin-top: 20px;
+    }
     .navigation-section h2 {
         font-size: 1.3rem;
     }
 
     .intro h1 {
-        font-size: 2.1rem;
+        font-size: 2.3rem;
     }
 
     .intro h4 {
