@@ -197,6 +197,8 @@ nav {
     display: flex;
     justify-content: center;
     font-family: "Sekuya", system-ui;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
 }
 
 .about-grid {
@@ -216,7 +218,6 @@ nav {
 .avtar {
     background-color: rgb(170, 170, 170);
     width: 150px;
-    /* height: 200px; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -245,6 +246,7 @@ nav {
     font-family: "Sekuya", system-ui;
     text-align: center;
     margin-bottom: 50px;
+    font-size: 1.5rem;
 }
 
 .tags i {
@@ -438,7 +440,7 @@ nav {
 }
 
 .project h1 {
-    font-size: 32px;
+    font-size: 1.3rem;
     text-align: center;
     margin-bottom: 60px;
 }
@@ -955,14 +957,18 @@ nav {
     }
 
     .skill-banners {
-        /* padding: 10px; */
         width: 100%;
         max-width: 1200px;
     }
 
-    .banners {
-        /* width: 100%; */
+    .details h4{
+        font-size: 1rem;
     }
+
+    .details p{
+        font-size: 0.8rem;
+    }
+
 
     .arrow-button2 {
         margin-left: 20px;
@@ -1038,6 +1044,11 @@ nav {
         font-size: 0.5rem;
     }
 
+    .about-content h1{
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+
     .about-grid {
         padding: 15px;
     }
@@ -1048,6 +1059,10 @@ nav {
 
     .about-grid p{
         font-size: 0.7rem;
+    }
+
+    .skills h1{
+          font-size: 0.7rem;
     }
 
     .skill-banners {
@@ -1094,15 +1109,20 @@ nav {
         width: 40px;
     }
 
+    .project h1{
+          font-size: 0.8rem;
+    }
+
+    .project-number h1{
+        font-size: 1.6rem;
+    }
+
     .project-details {
         gap: 10px;
     }
 
     .shape {
-
         top: 10px;
-
-
     }
 
 }
