@@ -121,7 +121,6 @@ nav {
 .intro {
     padding: 50px 30px 0px 30px;
     font-family: "Sekuya", system-ui;
-    font-size: 3.5rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -129,8 +128,13 @@ nav {
     width: 100%;
 }
 
+.intro h1 {
+    font-size: 3.1rem;
+}
+
 .intro h4 {
-    padding-bottom: 40px;
+    font-size: 3rem;
+    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -150,17 +154,20 @@ nav {
 .view-btn:hover {
     transform: scale(1.1);
 }
-.image-section{
+
+.image-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.upper-section{
+
+.upper-section {
     width: 100%;
     background-color: black;
 }
-.unique-shape{
+
+.unique-shape {
     width: 100%;
     transform: rotate(180deg);
     background-color: black;
@@ -202,7 +209,7 @@ nav {
 }
 
 .about-grid p {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -245,7 +252,7 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     margin: 20px;
- 
+
 }
 
 .skill-banners p {
@@ -426,7 +433,7 @@ nav {
     font-family: "Sekuya", system-ui;
 }
 
-.project h1{
+.project h1 {
     font-size: 32px;
     text-align: center;
     margin-bottom: 60px;
@@ -529,7 +536,7 @@ nav {
 ========================= */
 
 .education {
-     /* width: 100%; */
+    /* width: 100%; */
     display: flex;
     justify-content: center;
     background-color: black;
@@ -538,11 +545,12 @@ nav {
     flex-direction: column;
 
 }
+
 .education h1 {
     font-size: 20px;
     font-family: "Sekuya", system-ui;
     text-align: center;
-    margin-bottom: 20px ;
+    margin-bottom: 20px;
 }
 
 
@@ -556,40 +564,45 @@ nav {
     display: flex;
     box-sizing: border-box;
 
-  
+
 }
-.education-content{
+
+.education-content {
     width: 100%;
     display: flex;
 
 }
-.icons{
+
+.icons {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
+
 .education-icons {
     height: 30px;
     width: 30px;
     padding: 20px;
     border-radius: 999px;
     background-color: greenyellow;
-      display: flex;
+    display: flex;
     justify-content: center;
 }
 
-.cards{
+.cards {
     display: flex;
-     justify-content: center;
-     gap: 30px;
+    justify-content: center;
+    gap: 30px;
 }
-.education-cards{
+
+.education-cards {
     width: 30%;
     height: 200px;
     border-radius: 10px;
     background-color: white;
 
 }
+
 /* =========================
    Contact Section
 ========================= */
@@ -744,7 +757,7 @@ nav {
 
     .intro h4 {
         font-size: 3rem;
-        padding-bottom: 20px;
+        margin-bottom: 40px;
     }
 
     .arrow-button2 {
@@ -760,7 +773,6 @@ nav {
 
     .intro h4 {
         font-size: 2.5rem;
-        padding-bottom: 20px;
     }
 
     .skill-banners {
@@ -821,27 +833,28 @@ nav {
         max-width: 100%;
     }
 
-    .project-cards{
+    .project-cards {
         gap: 60px;
     }
-.project-details p {
-    
-    font-size: 0.9rem;
+
+    .project-details p {
+        font-size: 0.9rem;
+    }
 
 }
 
-}
 @media (min-width:768px) {
-    .arrow-button2{
+    .arrow-button2 {
         display: none;
     }
 }
 
 @media (max-width:768px) {
 
-    .hero{
+    .hero {
         margin-top: 20px;
     }
+
     .navigation-section h2 {
         font-size: 1.3rem;
     }
@@ -852,7 +865,6 @@ nav {
 
     .intro h4 {
         font-size: 2.2rem;
-        padding-bottom: 20px;
     }
 
     .view-btn {
@@ -922,6 +934,10 @@ nav {
 }
 
 @media (max-width:480px) {
+    .navigation-section h2 {
+        font-size: 1.2rem;
+    }
+
     .intro h1 {
         font-size: 1.8rem;
     }
@@ -931,7 +947,7 @@ nav {
     }
 
     .view-btn {
-        font-size: 0.78rem;
+        font-size: 0.7rem;
     }
 
     .skill-banners {
@@ -944,15 +960,16 @@ nav {
         /* width: 100%; */
     }
 
-    .arrow-button2{
+    .arrow-button2 {
         margin-left: 20px;
     }
-
-
 
 }
 
 @media (max-width:390px) {
+    .navigation-section h2 {
+        font-size: 0.9rem;
+    }
 
     .skill-banners {
         width: 95%;
@@ -1000,6 +1017,27 @@ nav {
 }
 
 @media (max-width:320px) {
+    .navigation-section{
+      gap: 0px;
+    }
+     .navigation-section h2 {
+        font-size: 0.6rem;
+    }
+    .intro h1 {
+        font-size: 1rem;
+    }
+
+    .intro h4 {
+        font-size: 1.2rem;
+    }
+     .view-btn {
+        font-size: 0.5rem;
+    }
+
+    .about-grid {
+        padding: 15px;
+    }
+
     .skill-banners {
         width: 100%;
     }
@@ -1047,14 +1085,12 @@ nav {
     .project-details {
         gap: 10px;
     }
+
     .shape {
 
-    top: 10px;
-   
-   
-}
-.shape img{
+        top: 10px;
 
 
-}
+    }
+
 }
