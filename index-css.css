@@ -215,12 +215,16 @@ nav {
 
 .avtar {
     background-color: rgb(170, 170, 170);
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    /* height: 200px; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.avtar img{
+    width: 100%;
 }
 
 /* =========================
@@ -1036,6 +1040,14 @@ nav {
 
     .about-grid {
         padding: 15px;
+    }
+    .avtar{
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-grid p{
+        font-size: 0.7rem;
     }
 
     .skill-banners {
