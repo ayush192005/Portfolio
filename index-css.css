@@ -710,8 +710,70 @@ nav {
     font-size: 2rem;
     color: white;
     font-family: "Sekuya", system-ui;
-    padding: 20px 0px;
+    padding: 40px 0px;
 }
+
+.contact-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    margin: 70px 0px 60px 0px;
+}
+
+.contact-icons{
+    padding: 20px;
+    background-color: #e0f759;
+    font-size: 22px;
+    color: black;
+    border-radius: 999px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.contact-methods h4{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-methods span ,a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.lets-talk-button{
+    display: flex;
+    justify-content: center;
+}
+
+.talk-btn {
+    color: rgb(0, 0, 0);
+    background-color:#c9ec06;
+    padding: 10px;;
+    border: none;
+    border-radius: 40px;
+    width: 240px;
+     font-family: "Sekuya", system-ui;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 1rem;
+     cursor: pointer;
+}
+.talk-btn h3{
+    margin-left: 30px;
+}
+
+.arrow-up2-right {
+    padding: 10px;
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
 
 
 /* =========================
