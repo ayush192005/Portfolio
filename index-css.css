@@ -561,12 +561,35 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .education-icons {
-    width: 70%;
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
+    margin: 0px 50px;
+}
+
+.line {
+    position: absolute;
+    background: #CEEC25;
+    height: 2px;
+    width: 790px;
+    top: 25px;
+    left: 7%;
+    right: 8%;
+    z-index: 0;
+    margin: 0 auto;
+}
+
+.card-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 .icons {
@@ -577,7 +600,94 @@ nav {
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
+
+.card {
+    width: 370px;
+    height: 230px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.education-details {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.year {
+    color: rgb(0, 0, 0);
+    background-color: #c9ec06;
+    padding: 7px;
+    margin-bottom: 10px;
+    width: 100px;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.education-details h5 {
+    color: black;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.education-details p {
+    color: rgb(98, 98, 98);
+    margin-bottom: 9px;
+}
+
+.education-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.college-details {
+    color: black;
+    text-align: center;
+    font-size: 0.92rem;
+    width: 90%;
+    margin-bottom: 8px;
+}
+
+.school-details {
+    margin-bottom: 30px;
+}
+
+.cgpa {
+    color: rgb(0, 0, 0);
+    background-color: #e0f373;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 12px;
+    font-weight: bold;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.line-vertically {
+    position: absolute;
+    background: #CEEC25;
+    height: 480px;
+    width: 2px;
+    top: 80px;
+    left: 4%;
+    right: 8%;
+    z-index: 0;
+
+}
+
+
 
 
 /* =========================
@@ -727,6 +837,14 @@ nav {
     Responsive Design
   ========================
 */
+
+@media (min-width:1919px) {
+    .line-vertically {
+        display: none;
+    }
+
+}
+
 @media (max-width:1919px) {
     .intro h1 {
         font-size: 4rem;
@@ -739,6 +857,70 @@ nav {
 
     .arrow-button2 {
         display: none;
+    }
+
+    .line-vertically {
+        display: none;
+    }
+
+}
+
+@media (max-width:1366px) {
+    .education-icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .line {
+        display: none;
+    }
+
+    .icons {
+        margin: 0;
+
+    }
+
+    .card {
+        margin: 0;
+        width: 90%;
+        height: 180px;
+    }
+
+    .line-vertically {
+        display: block;
+    }
+
+    .education-headings {
+        width: 30%;
+        align-items: start;
+    }
+
+    .education-headings h5 {
+        font-size: 1.2rem;
+    }
+
+    .education-headings p {
+        font-size: 1.1rem;
+    }
+
+    .education-details {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .college-details {
+        width: 40%;
+        text-align: left;
+        font-size: 1.1rem;
+        margin: 0;
     }
 
 }
@@ -755,6 +937,20 @@ nav {
     .skill-banners {
         max-width: 100%;
     }
+
+    .education-headings h5 {
+        font-size: 1.1rem;
+    }
+
+    .education-headings p {
+        font-size: 1rem;
+    }
+
+    .college-details {
+        font-size: 1rem;
+    }
+
+
 }
 
 @media (max-width:1024px) {
@@ -820,7 +1016,22 @@ nav {
 
     .project-image img {
         width: 160px;
+    }
 
+    .education-headings h5 {
+        font-size: 0.9rem;
+    }
+
+    .education-headings p {
+        font-size: 0.8rem;
+    }
+
+    .college-details {
+        font-size: 0.8rem;
+    }
+
+    .cgpa {
+        font-size: 0.8rem;
     }
 
 }
@@ -917,6 +1128,37 @@ nav {
         display: block;
     }
 
+    .education-icons {
+        margin: 0px 15px;
+    }
+
+    .education-headings {
+        width: 57%;
+    }
+
+     .education-headings h5 {
+        font-size: 1.1rem;
+    }
+
+    .education-headings p {
+        font-size: 1rem;
+    }
+
+
+    .college-details {
+        display: none;
+    }
+
+    .cgpa {
+        font-size: 0.8rem;
+        padding: 3px;
+    }
+
+    .line-vertically{
+        left: 5%;
+    }
+
+
 }
 
 @media (max-width:480px) {
@@ -963,6 +1205,32 @@ nav {
 
     .arrow-button2 a {
         font-size: 1rem;
+    }
+
+    .education-icons {
+        margin: 0px 10px;
+    }
+
+    .education-headings {
+        width: 100%;
+    }
+
+    .education-headings h5 {
+        font-size: 1rem;
+    }
+
+    .education-headings p {
+        font-size:0.91rem;
+    }
+
+    .education-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .year {
+        font-size: 0.8rem;
+        padding: 4px;
     }
 
 }
@@ -1026,6 +1294,13 @@ nav {
 
     .arrow-button2 a {
         font-size: 0.6rem;
+    }
+      .education-headings h5 {
+        font-size: 0.9rem;
+    }
+
+    .education-headings p {
+        font-size:0.8rem;
     }
 
 }
@@ -1132,5 +1407,20 @@ nav {
     .shape {
         top: 10px;
     }
+
+        .education-headings h5 {
+        font-size: 0.7rem;
+    }
+
+    .education-headings p {
+        font-size:0.6rem;
+    }
+      .cgpa {
+       font-size: 0.4rem;
+       padding: 2px;
+    }
+.line-vertically{
+    left: 9%;
+}
 
 }
