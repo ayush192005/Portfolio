@@ -608,7 +608,7 @@ nav {
 
 .card {
     width: 370px;
-    height: 230px;
+    height: 250px;
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -699,12 +699,13 @@ nav {
 }
 
 .contact-menu {
-    width: 60%;
+    width: fit-content;
     height: 70%;
     background-color: black;
     border-radius: 15px;
     text-align: center;
     color: white;
+    margin: 40px 0px;
 }
 
 .contact-menu h1 {
@@ -726,7 +727,7 @@ nav {
 .contact-icons {
     padding: 20px;
     background-color: #e0f759;
-    font-size: 22px;
+    font-size: 1.2rem;
     color: black;
     border-radius: 999px;
     border: none;
@@ -922,12 +923,18 @@ nav {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
         margin: 0px 0px 30px 0px;
-        padding: 0px 20px;
+        padding: 0px 50px;
     }
 
     .contact-icons {
         margin: 0px;
     }
+.talk-btn {
+        width: 45%;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
 
 }
 
@@ -985,6 +992,11 @@ nav {
         text-align: left;
         font-size: 1.1rem;
         margin: 0;
+    }
+
+    .contact-icons {
+        padding: 10px;
+        font-size: 1rem;
     }
 
 }
@@ -1100,7 +1112,7 @@ nav {
 
     .talk-btn {
         width: 45%;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         margin: 0;
     }
 }
@@ -1206,11 +1218,11 @@ nav {
     }
 
     .education-headings h5 {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     .education-headings p {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .college-details {
@@ -1236,16 +1248,14 @@ nav {
 
     .talk-btn {
         width: 75%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         margin: 0;
     }
 
     .arrow-up2-right {
         padding: 7px;
         font-size: 10px;
-
     }
-
 
 }
 
@@ -1304,7 +1314,7 @@ nav {
     }
 
     .education-headings h5 {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .education-headings p {
@@ -1395,7 +1405,7 @@ nav {
     }
 
     .education-headings h5 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .education-headings p {
@@ -1403,7 +1413,7 @@ nav {
     }
 
     .talk-btn {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         margin: 0;
     }
 
@@ -1451,7 +1461,7 @@ nav {
         font-size: 0.7rem;
     }
 
-    .skills{
+    .skills {
         width: 300px;
     }
 
@@ -1540,8 +1550,8 @@ nav {
         left: 9%;
     }
 
-    .contact-menu{
-        width: 700px;;
+    .contact-menu {
+        width: 700px;
     }
 
 }
