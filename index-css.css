@@ -547,6 +547,7 @@ nav {
     padding: 40px 20px;
     color: #ffffff;
     flex-direction: column;
+    width: 100%;
 }
 
 .education h1 {
@@ -699,9 +700,9 @@ nav {
 
 .contact-menu {
     width: 60%;
-    height: 500px;
+    height: 70%;
     background-color: black;
-    border-radius: 20px;
+    border-radius: 15px;
     text-align: center;
     color: white;
 }
@@ -713,15 +714,16 @@ nav {
     padding: 40px 0px;
 }
 
-.contact-details{
+.contact-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 50px;
     padding: 0px 40px;
     margin: 70px 0px 60px 0px;
 }
 
-.contact-icons{
+.contact-icons {
     padding: 20px;
     background-color: #e0f759;
     font-size: 22px;
@@ -731,37 +733,41 @@ nav {
     margin-bottom: 30px;
 }
 
-.contact-methods h4{
+.contact-methods h4 {
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
-.contact-methods span ,a{
-    font-size: 1rem;
+.contact-methods a {
+    font-size: 0.9rem;
     text-decoration: none;
     color: white;
 }
-.lets-talk-button{
+
+.lets-talk-button {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .talk-btn {
     color: rgb(0, 0, 0);
-    background-color:#c9ec06;
-    padding: 10px;;
+    background-color: #c9ec06;
+    padding: 10px;
     border: none;
     border-radius: 40px;
-    width: 240px;
-     font-family: "Sekuya", system-ui;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     font-size: 1rem;
-     cursor: pointer;
+    width: 25%;
+    font-family: "Sekuya", system-ui;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    cursor: pointer;
+    gap: 30px;
 }
-.talk-btn h3{
-    margin-left: 30px;
+
+.talk-btn h3 {
+    margin-left: 20px;
 }
 
 .arrow-up2-right {
@@ -910,6 +916,21 @@ nav {
 
 }
 
+@media (max-width:1500px) {
+    .contact-details {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+        margin: 0px 0px 30px 0px;
+        padding: 0px 20px;
+    }
+
+    .contact-icons {
+        margin: 0px;
+    }
+
+}
+
 @media (max-width:1366px) {
     .education-icons {
         display: flex;
@@ -920,7 +941,6 @@ nav {
         display: flex;
         flex-direction: row;
         align-items: center;
-
     }
 
     .line {
@@ -929,7 +949,6 @@ nav {
 
     .icons {
         margin: 0;
-
     }
 
     .card {
@@ -1079,6 +1098,11 @@ nav {
         font-size: 0.8rem;
     }
 
+    .talk-btn {
+        width: 45%;
+        font-size: 0.9rem;
+        margin: 0;
+    }
 }
 
 @media (min-width:768px) {
@@ -1202,6 +1226,27 @@ nav {
         left: 5%;
     }
 
+    .contact-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+        margin: 0px 0px 30px 0px;
+        padding: 0px 20px;
+    }
+
+    .talk-btn {
+        width: 75%;
+        font-size: 0.8rem;
+        margin: 0;
+    }
+
+    .arrow-up2-right {
+        padding: 7px;
+        font-size: 10px;
+
+    }
+
+
 }
 
 @media (max-width:480px) {
@@ -1276,6 +1321,16 @@ nav {
         padding: 4px;
     }
 
+    .contact-menu {
+        width: 300px;
+        height: 70%;
+        background-color: black;
+        border-radius: 15px;
+        text-align: center;
+        color: white;
+    }
+
+
 }
 
 @media (max-width:390px) {
@@ -1347,6 +1402,14 @@ nav {
         font-size: 0.8rem;
     }
 
+    .talk-btn {
+        font-size: 0.6rem;
+        margin: 0;
+    }
+
+    .lets-talk-button {
+        padding: 0px 30px;
+    }
 }
 
 @media (max-width:320px) {
@@ -1386,6 +1449,10 @@ nav {
 
     .about-grid p {
         font-size: 0.7rem;
+    }
+
+    .skills{
+        width: 300px;
     }
 
     .skills h1 {
@@ -1452,6 +1519,10 @@ nav {
         top: 10px;
     }
 
+    .education {
+        width: 300px;
+    }
+
     .education-headings h5 {
         font-size: 0.7rem;
     }
@@ -1467,6 +1538,10 @@ nav {
 
     .line-vertically {
         left: 9%;
+    }
+
+    .contact-menu{
+        width: 700px;;
     }
 
 }
