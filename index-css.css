@@ -791,7 +791,86 @@ nav {
     background-color: black;
     height: 400px;
     width: 100%;
+    color: white;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 50px 0px 50px;
+}
+
+.right-side-footer {
+    width: 50%;
+}
+
+.right-side-footer h1 {
+    font-size: 2.5rem;
+}
+
+.heading {
+    color: #c9ec06;
+    margin-bottom: 20px;
+}
+
+.right-side-footer h3 {
+    width: 400px;
+    color: rgba(255, 255, 255, 0.596);
+    margin-bottom: 30px;
+}
+
+.details-in-footer {
+    width: 50%;
+    border-left: 1px solid rgba(255, 255, 255, 0.469);
+}
+
+.footer-contact {
+    margin-left: 50px;
+    gap: 30px;
+}
+
+.footer-icon-details {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.its-detail {
+    margin-bottom: 15px;
+    margin-left: 45px;
+}
+
+
+.footer-icon {
+    font-size: 24px;
+}
+
+.footer-line{
+       display: flex;
+    justify-content: center;
+}
+.footer-line hr{
+
+    width: 90%;
+}
+
+
+.get-touch-btn {
+    background-color: #c9ec06;
+    width: fit-content;
+    color: black;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+
 
 /* ANIMATIONS */
 
@@ -929,7 +1008,8 @@ nav {
     .contact-icons {
         margin: 0px;
     }
-.talk-btn {
+
+    .talk-btn {
         width: 45%;
         font-size: 0.8rem;
         margin: 0;
