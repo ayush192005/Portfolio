@@ -789,7 +789,7 @@ nav {
 
 .footer-section {
     background-color: black;
-    height: 400px;
+    height: fit-content;
     width: 100%;
     color: white;
 }
@@ -817,6 +817,7 @@ nav {
     width: 400px;
     color: rgba(255, 255, 255, 0.596);
     margin-bottom: 30px;
+    font-weight: 300;
 }
 
 .details-in-footer {
@@ -825,7 +826,7 @@ nav {
 }
 
 .footer-contact {
-    margin-left: 50px;
+    margin-left: 70px;
     gap: 30px;
 }
 
@@ -845,16 +846,6 @@ nav {
     font-size: 24px;
 }
 
-.footer-line{
-       display: flex;
-    justify-content: center;
-}
-.footer-line hr{
-
-    width: 90%;
-}
-
-
 .get-touch-btn {
     background-color: #c9ec06;
     width: fit-content;
@@ -869,7 +860,31 @@ nav {
     cursor: pointer;
 }
 
+.footer-line {
+    display: flex;
+    justify-content: center;
+    opacity: 15%;
+    margin-top: 40px;
+}
 
+.footer-line hr {
+    width: 95%;
+}
+
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.copyright-section span {
+    color: rgba(255, 255, 255, 0.666);
+}
+
+.copyright-icons {
+    display: flex;
+    gap: 30px;
+}
 
 
 /* ANIMATIONS */
@@ -1106,8 +1121,21 @@ nav {
         font-size: 1rem;
     }
 
+    .right-side-footer h1,
+    .heading {
+        font-size: 2rem;
+    }
+
+    .get-touch-btn {
+        font-size: 1rem;
+    }
+
+    .footer-contact h3 {
+        font-size: 1rem;
+    }
 
 }
+
 
 @media (max-width:1024px) {
     header {
@@ -1195,6 +1223,35 @@ nav {
         font-size: 0.8rem;
         margin: 0;
     }
+
+    .footer-content {
+        padding: 70px 30px 0px 30px;
+    }
+
+    .right-side-footer h1,
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .get-touch-btn {
+        font-size: 0.9rem;
+    }
+
+    .details-in-footer {
+        width: 50%;
+
+    }
+
+    .footer-contact {
+        margin-left: 50px;
+        gap: 30px;
+
+    }
+
+    .footer-contact h3 {
+        font-size: 0.9rem;
+    }
+
 }
 
 @media (min-width:768px) {
