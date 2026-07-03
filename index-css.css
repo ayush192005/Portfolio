@@ -1228,6 +1228,10 @@ nav {
         padding: 70px 30px 0px 30px;
     }
 
+    .right-side-footer {
+        width: 40%;
+    }
+
     .right-side-footer h1,
     .heading {
         font-size: 1.5rem;
@@ -1239,17 +1243,14 @@ nav {
 
     .details-in-footer {
         width: 50%;
-
     }
 
     .footer-contact {
         margin-left: 50px;
-        gap: 30px;
-
     }
 
     .footer-contact h3 {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
 }
@@ -1394,6 +1395,34 @@ nav {
         font-size: 10px;
     }
 
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-side-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .right-side-footer h3{
+        font-size: 0.8rem;
+      text-align: center;
+    }
+
+    .details-in-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        margin-top: 50px;
+    }
+
+    .footer-contact {
+        /* width: 60%; */
+        margin: 0 auto;
+    }
 }
 
 @media (max-width:480px) {
