@@ -52,10 +52,13 @@ header {
     font-size: 1.6rem;
     font-family: "Sekuya", system-ui;
     padding: 10px 24px;
+    position: relative;
 }
 
-nav {
+.navigation-section nav ul{
     display: flex;
+    list-style: none;
+    position: relative;
 }
 
 .navs {
@@ -78,6 +81,11 @@ nav {
 
 .navigation-section nav .menu {
     display: none;
+}
+
+.hamburger-icon {
+    display: flex;
+    align-items: center;
 }
 
 .btn-contact {
@@ -1147,7 +1155,11 @@ nav {
         border-radius: 0px;
     }
 
-    .navs,
+    .navs {
+        display: none;
+        /* text-align: center; */
+    }
+
     .btn-contact {
         display: none;
     }
@@ -1155,6 +1167,7 @@ nav {
     .navigation-section nav .menu {
         display: block;
         font-size: 20px;
+        cursor: pointer;
     }
 
     .hero {
@@ -1325,7 +1338,7 @@ nav {
         width: 100%;
         display: flex;
         flex-direction: column;
-       align-items: center;
+        align-items: center;
     }
 
     .banners {
@@ -1533,228 +1546,229 @@ nav {
         gap: 20px;
     }
 
-    .copyright-section span{
+    .copyright-section span {
         text-align: center;
     }
 
 }
-    @media (max-width:390px) {
-        .navigation-section h2 {
-            font-size: 0.9rem;
-        }
 
-        .skill-banners {
-            width: 95%;
-        }
-
-        .title span {
-            font-size: 0.7rem;
-        }
-
-        .banners {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .card-header {
-            padding: 10px 15px;
-        }
-
-        .progress-section {
-            padding: 10px 15px;
-        }
-
-        .progress-area {
-            gap: 10px;
-        }
-
-        .progress-area p {
-            width: 45px;
-            font-size: 0.6rem;
-        }
-
-        .logo-text h2 {
-            font-size: 0.9rem;
-        }
-
-        .percent {
-            font-size: 12px;
-        }
-
-        .tag {
-            width: 40px;
-        }
-
-        .details p {
-            font-size: 0.6rem;
-        }
-
-        .project-number h1 {
-            margin-right: 15px;
-            margin-bottom: 0px;
-            font-size: 1.6rem;
-        }
-
-        .arrow-button2 a {
-            font-size: 0.6rem;
-        }
-
-        .education-headings h5 {
-            font-size: 0.8rem;
-        }
-
-        .education-headings p {
-            font-size: 0.8rem;
-        }
-
-        .talk-btn {
-            font-size: 0.5rem;
-            margin: 0;
-        }
-
-        .lets-talk-button {
-            padding: 0px 30px;
-        }
-
-        .details-in-footer {
-            align-items: start;
-        }
-
-        .footer-contact {
-            width: 60%;
-        }
+@media (max-width:390px) {
+    .navigation-section h2 {
+        font-size: 0.9rem;
     }
 
-    @media (max-width:320px) {
-        .navigation-section {
-            gap: 0px;
-        }
-
-        .navigation-section h2 {
-            font-size: 0.6rem;
-        }
-
-        .intro h1 {
-            font-size: 1rem;
-        }
-
-        .intro h4 {
-            font-size: 1.2rem;
-        }
-
-        .view-btn {
-            font-size: 0.5rem;
-        }
-
-        .about-content h1 {
-            font-size: 0.7rem;
-            margin-bottom: 20px;
-        }
-
-        .about-grid {
-            padding: 15px;
-        }
-
-        .avtar {
-            width: 100px;
-            height: 100px;
-        }
-
-        .about-grid p {
-            font-size: 0.7rem;
-        }
-
-        .skills {
-            width: 300px;
-        }
-
-        .skills h1 {
-            font-size: 0.7rem;
-        }
-
-        .skill-banners {
-            width: 100%;
-        }
-
-        .title span {
-            font-size: 0.6rem;
-        }
-
-        .banners {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .card-header {
-            width: 100%;
-            padding: 10px 15px;
-        }
-
-        .progress-section {
-            width: 100%;
-            padding: 10px 15px;
-        }
-
-        .progress-area {
-            gap: 10px;
-        }
-
-        .progress-area p {
-            width: 30px;
-            font-size: 0.6rem;
-        }
-
-        .logo-text h2 {
-            font-size: 0.9rem;
-        }
-
-        .percent p {
-            font-size: 12px;
-        }
-
-        .tag {
-            width: 40px;
-        }
-
-        .project h1 {
-            font-size: 0.8rem;
-        }
-
-        .project-number h1 {
-            font-size: 1.2rem;
-        }
-
-        .project-details {
-            gap: 10px;
-        }
-
-        .shape {
-            top: 10px;
-        }
-
-        .education {
-            width: 300px;
-        }
-
-        .education-headings h5 {
-            font-size: 0.7rem;
-        }
-
-        .education-headings p {
-            font-size: 0.6rem;
-        }
-
-        .cgpa {
-            font-size: 0.4rem;
-            padding: 2px;
-        }
-
-        .line-vertically {
-            left: 9%;
-        }
-
-        .contact-menu {
-            width: 700px;
-        }
-
+    .skill-banners {
+        width: 95%;
     }
+
+    .title span {
+        font-size: 0.7rem;
+    }
+
+    .banners {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-header {
+        padding: 10px 15px;
+    }
+
+    .progress-section {
+        padding: 10px 15px;
+    }
+
+    .progress-area {
+        gap: 10px;
+    }
+
+    .progress-area p {
+        width: 45px;
+        font-size: 0.6rem;
+    }
+
+    .logo-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .percent {
+        font-size: 12px;
+    }
+
+    .tag {
+        width: 40px;
+    }
+
+    .details p {
+        font-size: 0.6rem;
+    }
+
+    .project-number h1 {
+        margin-right: 15px;
+        margin-bottom: 0px;
+        font-size: 1.6rem;
+    }
+
+    .arrow-button2 a {
+        font-size: 0.6rem;
+    }
+
+    .education-headings h5 {
+        font-size: 0.8rem;
+    }
+
+    .education-headings p {
+        font-size: 0.8rem;
+    }
+
+    .talk-btn {
+        font-size: 0.5rem;
+        margin: 0;
+    }
+
+    .lets-talk-button {
+        padding: 0px 30px;
+    }
+
+    .details-in-footer {
+        align-items: start;
+    }
+
+    .footer-contact {
+        width: 60%;
+    }
+}
+
+@media (max-width:320px) {
+    .navigation-section {
+        gap: 0px;
+    }
+
+    .navigation-section h2 {
+        font-size: 0.6rem;
+    }
+
+    .intro h1 {
+        font-size: 1rem;
+    }
+
+    .intro h4 {
+        font-size: 1.2rem;
+    }
+
+    .view-btn {
+        font-size: 0.5rem;
+    }
+
+    .about-content h1 {
+        font-size: 0.7rem;
+        margin-bottom: 20px;
+    }
+
+    .about-grid {
+        padding: 15px;
+    }
+
+    .avtar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-grid p {
+        font-size: 0.7rem;
+    }
+
+    .skills {
+        width: 300px;
+    }
+
+    .skills h1 {
+        font-size: 0.7rem;
+    }
+
+    .skill-banners {
+        width: 100%;
+    }
+
+    .title span {
+        font-size: 0.6rem;
+    }
+
+    .banners {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-header {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .progress-section {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .progress-area {
+        gap: 10px;
+    }
+
+    .progress-area p {
+        width: 30px;
+        font-size: 0.6rem;
+    }
+
+    .logo-text h2 {
+        font-size: 0.9rem;
+    }
+
+    .percent p {
+        font-size: 12px;
+    }
+
+    .tag {
+        width: 40px;
+    }
+
+    .project h1 {
+        font-size: 0.8rem;
+    }
+
+    .project-number h1 {
+        font-size: 1.2rem;
+    }
+
+    .project-details {
+        gap: 10px;
+    }
+
+    .shape {
+        top: 10px;
+    }
+
+    .education {
+        width: 300px;
+    }
+
+    .education-headings h5 {
+        font-size: 0.7rem;
+    }
+
+    .education-headings p {
+        font-size: 0.6rem;
+    }
+
+    .cgpa {
+        font-size: 0.4rem;
+        padding: 2px;
+    }
+
+    .line-vertically {
+        left: 9%;
+    }
+
+    .contact-menu {
+        width: 700px;
+    }
+
+}
