@@ -5,7 +5,8 @@
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -1195,13 +1196,12 @@ header {
         display: none;
     }
 
-    /* .responsiveMenuButton{
-        display: none;
+    .btn-contact{
+        background: black;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 40px;
     }
-
-    .responsiveMenuButton .closeIcon {
-        display: block;
-    } */
 
     .btn-contact {
         display: none;
@@ -1240,6 +1240,9 @@ header {
         max-width: 100%;
     }
 
+    .progress-section {
+        padding: 20px 30px;
+    }
 
     .project-cards {
         gap: 60px;
@@ -1327,19 +1330,21 @@ header {
         font-size: 1.3rem;
     }
 
+
     .greet {
         flex-direction: column;
         gap: 0px;
         margin-bottom: 20px;
     }
 
-    .greet .hi{
+    .greet .hi {
         font-size: 1.8rem;
         margin: 0px;
     }
 
     .intro h4 {
-        font-size: 2.3rem;
+        width: 320px;
+        font-size: 2.7rem;
     }
 
     .view-btn {
@@ -1392,6 +1397,7 @@ header {
 
     .title-small-screen {
         display: block;
+        width: 90px;
     }
 
     .down-arrow-button {
@@ -1420,7 +1426,7 @@ header {
 
     .progress-section.active {
         max-height: 600px;
-        padding: 20px 0px;
+        padding: 20px 30px;
     }
 
     .down-icon {
@@ -1548,16 +1554,12 @@ header {
         font-size: 1.2rem;
     }
 
-    .intro{
-        margin-top: 70px;
-    }
-
-    .greet .h1{
+    .greet .h1 {
         font-size: 2rem
     }
 
     .intro h1 {
-        font-size: 3rem;  
+        font-size: 3rem;
     }
 
     .intro h4 {
@@ -1566,7 +1568,7 @@ header {
     }
 
     .view-btn {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .skill-banners {
@@ -1742,7 +1744,7 @@ header {
         font-size: 0.6rem;
     }
 
-    .greet .hi{
+    .greet .hi {
         font-size: 1.2rem;
     }
 
