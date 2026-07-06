@@ -5,8 +5,7 @@
 * {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;}
 
 html {
     scroll-behavior: smooth;
@@ -148,7 +147,7 @@ header {
 
 .intro h4 {
     font-size: 4rem;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -928,7 +927,7 @@ header {
 
 /* ANIMATIONS */
 
-.autoShow {
+/* .autoShow {
     animation: text-appear both;
     animation-timeline: view();
     animation-range: entry 20% cover 100vh;
@@ -1016,7 +1015,7 @@ header {
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 /* =======================
     Responsive Design
@@ -1217,7 +1216,7 @@ header {
     }
 
     .intro h4 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
 
     .image-section {
@@ -1340,7 +1339,7 @@ header {
     }
 
     .intro h4 {
-        font-size: 1rem;
+        font-size: 2.3rem;
     }
 
     .view-btn {
@@ -1549,17 +1548,25 @@ header {
         font-size: 1.2rem;
     }
 
+    .intro{
+        margin-top: 70px;
+    }
+
+    .greet .h1{
+        font-size: 2rem
+    }
+
     .intro h1 {
-        font-size: 2.8rem;
-        margin-bottom: 20px;
+        font-size: 3rem;  
     }
 
     .intro h4 {
-        font-size: 2.6rem;
+        width: 300px;
+        font-size: 2.8rem;
     }
 
     .view-btn {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .skill-banners {
@@ -1735,16 +1742,21 @@ header {
         font-size: 0.6rem;
     }
 
+    .greet .hi{
+        font-size: 1.2rem;
+    }
+
     .intro h1 {
-        font-size: 1rem;
+        font-size: 1.9rem;
     }
 
     .intro h4 {
         font-size: 1.2rem;
+        width: 130px;
     }
 
     .view-btn {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .about-content h1 {
