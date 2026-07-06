@@ -17,36 +17,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 
-<script src="index.js"></script>
 </head>
 
 <body>
+    <script src="index.js"></script>        
     <!-- <div class="container"> -->
     <!-- Header Section -->
     <header>
         <div class="navigation-section">
             <h2>AKB</h2>
             <nav>
-                <ul id="menu">
-                    <a href="#" class="navs">
-                        <li>Home</li>
-                    </a>
-                    <a href="#about" class="navs">
-                        <li>About</li>
-                    </a>
-                    <a href="#skills" class="navs">
-                        <li>Skills</li>
-                    </a>
-                    <a href="#project" class="navs">
-                        <li>Projects</li>
-                    </a>
-                    <a href="#contact" class="btn-contact">Contact Me <i
-                            class="ri-arrow-right-long-line arrow-up-right"></i></a>
+                <ul>
+                    <li><a href="#" class="navs">Home</a></li>
+                    <li><a href="#about" class="navs">About</a></li>
+                    <li><a href="#skills" class="navs">Skills</a></li>
+                    <li> <a href="#project" class="navs">Projects</a></li>
+                    <a href="#contact" class="btn-contact">Contact Me
+                        <i class="ri-arrow-right-long-line arrow-up-right"></i></a>
                 </ul>
-                <div class="hamburger-icon">
-                    <a><i class="ri-menu-line menu"></i></a>
 
-                </div>
+                <button class="responsiveMenuButton">
+                    <i class="ri-menu-line openIcon"></i>
+                    <i class="fa-solid fa-xmark closeIcon"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -100,11 +93,18 @@
                         <div class="logo-text">
                             <i class="ri-code-s-slash-line code-icon"></i>
                             <h2>Languages</h2>
+                            <div class="title-small-screen">
+                                <i class="ri-circle-fill dot2"></i>
+                                <span class="small-screen-title">Core Skills</span>
+                            </div>
                         </div>
 
                         <div class="title">
                             <i class="ri-circle-fill dot"></i>
-                            <span>Core Skills</span>
+                            <span class="big-screen-title">Core Skills</span>
+                        </div>
+                        <div class="down-arrow-button">
+                            <i class="fa-solid fa-caret-down down-icon"></i>
                         </div>
                     </div>
 
@@ -147,11 +147,18 @@
                         <div class="logo-text">
                             <i class="ri-global-line code-icon"></i>
                             <h2>Web Development</h2>
+                            <div class="title-small-screen">
+                                <i class="ri-circle-fill dot2"></i>
+                                <span class="small-screen-title">Frontend</span>
+                            </div>
                         </div>
 
                         <div class="title">
                             <i class="ri-circle-fill dot"></i>
                             <span>Frontend</span>
+                        </div>
+                        <div class="down-arrow-button">
+                            <i class="fa-solid fa-caret-down down-icon"></i>
                         </div>
                     </div>
 
@@ -190,15 +197,22 @@
 
                 <!-- Graphic Designing Skill Card -->
                 <div class="banners autoShowleft-right">
-                    <div class="card-header">
+                     <div class="card-header">
                         <div class="logo-text">
-                            <i class="ri-brush-line code-icon"></i>
-                            <h2>Graphic Designing:</h2>
+                            <i class="ri-global-line code-icon"></i>
+                            <h2>Graphic Designing</h2>
+                            <div class="title-small-screen">
+                                <i class="ri-circle-fill dot2"></i>
+                                <span class="small-screen-title">Design</span>
+                            </div>
                         </div>
 
                         <div class="title">
                             <i class="ri-circle-fill dot"></i>
                             <span>Design</span>
+                        </div>
+                        <div class="down-arrow-button">
+                            <i class="fa-solid fa-caret-down down-icon"></i>
                         </div>
                     </div>
 
@@ -249,15 +263,21 @@
                         <div class="logo-text">
                             <i class="ri-tools-fill code-icon"></i>
                             <h2>Tools</h2>
+                            <div class="title-small-screen">
+                                <i class="ri-circle-fill dot2"></i>
+                                <span class="small-screen-title">workflow</span>
+                            </div>
                         </div>
                         <div class="title">
                             <i class="ri-circle-fill dot"></i>
                             <span>workflow</span>
                         </div>
-
+                        <div class="down-arrow-button">
+                            <i class="fa-solid fa-caret-down down-icon"></i>
+                        </div>
                     </div>
 
-                    <div class="progress-section tool">
+                    <div class="progress-section tool ">
                         <div class="progress-area">
                             <p>Git</p>
                             <div class="progress-line">
