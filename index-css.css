@@ -55,10 +55,11 @@ header {
     position: relative;
 }
 
-.navigation-section nav ul{
+.navigation-section nav ul {
     display: flex;
     list-style: none;
-    position: relative;
+    align-items: center;
+    gap: 8px;
 }
 
 .navs {
@@ -79,13 +80,12 @@ header {
     transform: translateY(-5px);
 }
 
-.navigation-section nav .menu {
+.responsiveMenuButton {
+    border: 0;
     display: none;
-}
-
-.hamburger-icon {
-    display: flex;
-    align-items: center;
+    font-size: 2rem;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
 .btn-contact {
@@ -99,6 +99,7 @@ header {
     cursor: pointer;
     border: none;
     gap: 10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,8 +290,8 @@ header {
     align-items: center;
     padding: 20px 30px 20px 30px;
     gap: 20px;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.247); */
 }
+
 
 .card-header h2 {
     font-size: 18px;
@@ -319,10 +320,20 @@ header {
     gap: 20px;
 }
 
+.title-small-screen {
+    display: none;
+}
+
 .title {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.title-small-screen .dot2 {
+    color: #CEEC25;
+    font-size: 7px;
+    margin-right: 4px;
 }
 
 .title .dot {
@@ -330,10 +341,25 @@ header {
     font-size: 7px;
 }
 
+.title-small-screen span {
+    font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.452);
+    font-size: 13px;
+}
+
 .title span {
     font-family: 'Poppins', sans-serif;
     color: rgba(255, 255, 255, 0.452);
     font-size: 13px;
+}
+
+.fa-caret-down {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.down-arrow-button {
+    display: none;
 }
 
 .progress-section {
@@ -432,9 +458,10 @@ header {
     justify-content: center;
 }
 
+/* 
 .tool {
     margin-top: 20px;
-}
+} */
 
 /* =========================
    Project Section
@@ -790,7 +817,6 @@ header {
 }
 
 
-
 /* =========================
    Footer Section
 ========================= */
@@ -992,6 +1018,7 @@ header {
   ========================
 */
 
+
 @media (min-width:1919px) {
     .line-vertically {
         display: none;
@@ -1037,8 +1064,6 @@ header {
         font-size: 0.8rem;
         margin: 0;
     }
-
-
 }
 
 @media (max-width:1366px) {
@@ -1144,7 +1169,6 @@ header {
 
 }
 
-
 @media (max-width:1024px) {
     header {
         padding: 0px;
@@ -1155,19 +1179,28 @@ header {
         border-radius: 0px;
     }
 
-    .navs {
+    .navigation-section ul li a {
         display: none;
-        /* text-align: center; */
     }
+
+    .responsiveMenuButton.open {
+        display: block;
+    }
+
+    .responsiveMenuButton.open .closeIcon {
+        display: none;
+    }
+
+    /* .responsiveMenuButton{
+        display: none;
+    }
+
+    .responsiveMenuButton .closeIcon {
+        display: block;
+    } */
 
     .btn-contact {
         display: none;
-    }
-
-    .navigation-section nav .menu {
-        display: block;
-        font-size: 20px;
-        cursor: pointer;
     }
 
     .hero {
@@ -1202,6 +1235,7 @@ header {
         padding: 10px;
         max-width: 100%;
     }
+
 
     .project-cards {
         gap: 60px;
@@ -1341,9 +1375,49 @@ header {
         align-items: center;
     }
 
+    .title {
+        display: none;
+    }
+
+    .title-small-screen {
+        display: block;
+    }
+
+    .down-arrow-button {
+        display: block;
+    }
+
     .banners {
         width: 90%;
         margin: 0px 40px;
+    }
+
+    .down-arrow-button {
+        display: block;
+    }
+
+    .progress-section {
+
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 30px;
+
+        transition:
+        max-height .4s ease,
+        adding .4s ease;
+    }
+
+    .progress-section.active {
+        max-height: 600px;
+        padding: 20px 0px;
+    }
+
+    .down-icon {
+        transition: .3s;
+    }
+
+    .down-icon.rotate {
+        transform: rotate(180deg);
     }
 
     .project-banners {
@@ -1480,6 +1554,10 @@ header {
         max-width: 1200px;
     }
 
+    .title-small-screen {
+        display: none;
+    }
+
     .details h4 {
         font-size: 1rem;
     }
@@ -1571,10 +1649,6 @@ header {
     }
 
     .card-header {
-        padding: 10px 15px;
-    }
-
-    .progress-section {
         padding: 10px 15px;
     }
 
@@ -1706,7 +1780,7 @@ header {
 
     .progress-section {
         width: 100%;
-        padding: 10px 15px;
+        /* padding: 10px 15px; */
     }
 
     .progress-area {
