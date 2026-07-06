@@ -127,6 +127,11 @@ header {
     justify-content: center;
 }
 
+.greet {
+    display: flex;
+    gap: 30px;
+}
+
 .intro {
     padding: 80px 30px 0px 30px;
     font-family: "Sekuya", system-ui;
@@ -1323,12 +1328,19 @@ header {
         font-size: 1.3rem;
     }
 
-    .intro h1 {
-        font-size: 2.3rem;
+    .greet {
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 20px;
+    }
+
+    .greet .hi{
+        font-size: 1.8rem;
+        margin: 0px;
     }
 
     .intro h4 {
-        font-size: 2.2rem;
+        font-size: 1rem;
     }
 
     .view-btn {
@@ -1403,8 +1415,8 @@ header {
         padding: 0 30px;
 
         transition:
-        max-height .4s ease,
-        adding .4s ease;
+            max-height .4s ease,
+            adding .4s ease;
     }
 
     .progress-section.active {
@@ -1538,11 +1550,12 @@ header {
     }
 
     .intro h1 {
-        font-size: 1.8rem;
+        font-size: 2.8rem;
+        margin-bottom: 20px;
     }
 
     .intro h4 {
-        font-size: 1.9rem;
+        font-size: 2.6rem;
     }
 
     .view-btn {
