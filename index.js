@@ -1,22 +1,23 @@
-const menuButton = document.querySelector(".responsiveMenuButton");
-const menuIcon = document.querySelector(".menuIcon");
+const menuBtn = document.querySelector(".responsiveMenuButton");
 const navLinks = document.querySelector(".navLinks");
 
-menuButton.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
 
-    navLinks.classList.toggle("showMenu");
+    menuBtn.classList.toggle("active");
 
-    if(navLinks.classList.contains("showMenu")){
+    navLinks.classList.toggle("active");
 
-        menuIcon.classList.remove("ri-menu-line");
-        menuIcon.classList.add("fa-solid","fa-xmark");
+});
+const navItems = document.querySelectorAll(".navLinks a");
 
-    }else{
+navItems.forEach((item)=>{
 
-        menuIcon.classList.remove("fa-solid","fa-xmark");
-        menuIcon.classList.add("ri-menu-line");
+    item.addEventListener("click",()=>{
 
-    }
+        menuBtn.classList.remove("active");
+        navLinks.classList.remove("active");
+
+    });
 
 });
 
