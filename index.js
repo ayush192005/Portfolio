@@ -1,26 +1,3 @@
-const menuBtn = document.querySelector(".responsiveMenuButton");
-const navLinks = document.querySelector(".navLinks");
-
-menuBtn.addEventListener("click", () => {
-
-    menuBtn.classList.toggle("active");
-
-    navLinks.classList.toggle("active");
-
-});
-const navItems = document.querySelectorAll(".navLinks a");
-
-navItems.forEach((item)=>{
-
-    item.addEventListener("click",()=>{
-
-        menuBtn.classList.remove("active");
-        navLinks.classList.remove("active");
-
-    });
-
-});
-
 const links = document.querySelectorAll(".navLinks a");
 
 links.forEach(link => {
