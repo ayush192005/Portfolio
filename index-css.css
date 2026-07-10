@@ -32,6 +32,8 @@ header {
     display: flex;
     justify-content: center;
     padding: 40px 0px 0px 0px;
+     width: 100%;
+    height: 100%;
 }
 
 .navigation-section {
@@ -119,36 +121,58 @@ header {
     font-size: 20px;
 }
 
-
 .mobileNavbar {
     display: none;
-    width: 40%;
-    height: 80%;
+    width: 80%;
+    height: 100%;
     background-color: rgba(214, 214, 214, 0.468);
     backdrop-filter: blur(20px);
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: -80%;
     padding: 0px 50px;
-   
+    z-index: 9999;
 }
-.responsiveNavbar{
+
+.responsiveNavbar {
     display: flex;
     flex-direction: column;
     gap: 30px;
-     font-size: 60px;
+    font-size: 60px;
+}
+
+.mobileNavbar .responsiveNavbar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.mobileNavbar i{
+    position: absolute;
+    top: 20;
+    /* right: 60%; */
+    color: white;
+    border-radius: 50%;
+    background-color: black;
+    padding: 5px;
+    font-size: 20px;
 }
 
 .mobileNavbar li {
     text-decoration: none;
     list-style: none;
     width: fit-content;
+    display: flex;
+    align-items: center;
 }
 
-.mobileNavbar a{
+.mobileNavbar a {
     color: rgb(0, 0, 0);
     font-size: 15px;
-    white-space: none;
 }
+
+.navs a{
+width: 40%;}
 
 
 /* =========================
