@@ -119,6 +119,38 @@ header {
     font-size: 20px;
 }
 
+
+.mobileNavbar {
+    display: none;
+    width: 40%;
+    height: 80%;
+    background-color: rgba(214, 214, 214, 0.468);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    right: 0;
+    padding: 0px 50px;
+   
+}
+.responsiveNavbar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+     font-size: 60px;
+}
+
+.mobileNavbar li {
+    text-decoration: none;
+    list-style: none;
+    width: fit-content;
+}
+
+.mobileNavbar a{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    white-space: none;
+}
+
+
 /* =========================
    Hero Section
 ========================= */
@@ -132,7 +164,7 @@ header {
     gap: 30px;
 }
 
-.greet .hi{
+.greet .hi {
     color: rgb(0, 0, 0);
 }
 
@@ -1214,7 +1246,7 @@ header {
     .responsiveMenuButton.active .closeIcon {
         display: block !important;
     }
-   
+
     .navLinks {
         position: fixed;
         top: 0;
@@ -1248,6 +1280,10 @@ header {
 
     .navLinks .btn-contact {
         display: none;
+    }
+
+    .mobileNavbar {
+        display: block;
     }
 
     .hero {
@@ -1383,6 +1419,7 @@ header {
         font-size: 1.8rem;
         margin: 0px;
     }
+
     .intro h4 {
         width: 320px;
         font-size: 2.7rem;
@@ -1393,7 +1430,7 @@ header {
         /* margin-bottom: 50px; */
     }
 
-    .upper-section{
+    .upper-section {
         margin-top: 130px;
     }
 
