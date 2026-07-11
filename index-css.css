@@ -14,7 +14,7 @@ html {
 
 body {
     background-color: #EFEFEF;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,8 +32,6 @@ header {
     display: flex;
     justify-content: center;
     padding: 40px 0px 0px 0px;
-     width: 100%;
-    height: 100%;
 }
 
 .navigation-section {
@@ -121,14 +119,27 @@ header {
     font-size: 20px;
 }
 
+.mobileMainFrame {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menuIcon{
+    display: none;
+    /* align-items: center; */
+    justify-content: center;
+    width: fit-content;
+}
+
 .mobileNavbar {
     display: none;
     width: 80%;
-    height: 100%;
+    height: fit-content;
     background-color: rgba(214, 214, 214, 0.468);
     backdrop-filter: blur(20px);
     position: fixed;
-    right: -80%;
+    top: 0;
+    right: 0;
     padding: 0px 50px;
     z-index: 9999;
 }
@@ -147,7 +158,7 @@ header {
     margin-top: 60px;
 }
 
-.mobileNavbar i{
+.mobileNavbar i {
     position: absolute;
     top: 20;
     /* right: 60%; */
@@ -171,8 +182,9 @@ header {
     font-size: 15px;
 }
 
-.navs a{
-width: 40%;}
+.navs a {
+    width: 40%;
+}
 
 
 /* =========================
@@ -1304,6 +1316,10 @@ width: 40%;}
 
     .navLinks .btn-contact {
         display: none;
+    }
+
+    .mobileMainFrame {
+        display: block;
     }
 
     .mobileNavbar {
