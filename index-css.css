@@ -155,12 +155,13 @@ header {
     gap: 30px;
 }
 
-.greet h1{
+.greet .hi span {
+    color: rgb(0, 0, 0);
     display: inline-block;
 }
 
-.greet .hi {
-    color: rgb(0, 0, 0);
+.greet .name span{
+    display: inline-block;
 }
 
 .intro {
@@ -176,6 +177,7 @@ header {
 .intro h1 {
     font-size: 5rem;
     color: #c9ec06;
+    display: inline-block;
 }
 
 .intro h4 {
@@ -183,6 +185,7 @@ header {
     margin-bottom: 50px;
     text-align: center;
 }
+
 
 .view-btn {
     text-decoration: none;
