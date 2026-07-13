@@ -68,7 +68,7 @@ breakTheText();
 gsap.from(".hi .a", {
     y: 80,
     duraton: 1,
-    delay: 1.5,
+    delay: 1,
     opacity: 0,
     stagger: 0.15,
 })
@@ -76,7 +76,7 @@ gsap.from(".hi .a", {
 gsap.from(".hi .b", {
     y: 80,
     duraton: 1,
-    delay: 1.5,
+    delay: 1,
     opacity: 0,
     stagger: -0.15,
 })
@@ -84,16 +84,16 @@ gsap.from(".hi .b", {
 gsap.from(".name .a", {
     y: 50,
     duraton: 0.8,
-    delay: 1,
+    delay: 1.5,
     opacity: 0,
     stagger: 0.15,
-    ease: "bounce.out",    
+    ease: "bounce.out",
 })
 
 gsap.from(".name .b", {
     y: 50,
     duraton: 0.8,
-    delay: 1,
+    delay: 1.5,
     opacity: 0,
     stagger: 0.15,
     ease: "bounce.out",
@@ -101,17 +101,16 @@ gsap.from(".name .b", {
 
 gsap.from("h4 .a", {
     y: 80,
-    duraton: 0.5,
-    delay: 2,
+    duraton: 1.5,
+    delay: 1.8,
     opacity: 0,
     stagger: 0.15,
 })
 
 gsap.from("h4 .b", {
     y: 80,
-    duraton: 0.5,
-    delay: 2,
+    duraton: 1.5,
+    delay: 1.8, 
     opacity: 0,
     stagger: 0.15,
-    
 })
