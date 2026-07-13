@@ -1162,9 +1162,9 @@ header {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 45%;
         height: 100vh;
-        background-color: rgba(255, 255, 255, 0.264);
+        background-color: rgba(255, 255, 255, 0.226);
         backdrop-filter: blur(30px);
         z-index: 10002;
     }
@@ -1178,16 +1178,17 @@ header {
         flex-direction: column;
         gap: 70px;
         width: fit-content;
-        padding: 130px 80px;
+        padding: 130px 70px;
         height: 100%;
         text-align: center;
+        text-wrap: none;
     }
 
     .full li a {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
     }
 
     .full ul i {
