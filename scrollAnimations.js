@@ -1,4 +1,4 @@
-         var tl = document.querySelector(".navigation-section");
+var tl = document.querySelector(".navigation-section");
 
 var tl = gsap.timeline()
 
@@ -43,25 +43,75 @@ close.addEventListener("click", function () {
 
 //! ------ header Animations --------
 function breakTheText() {
-    var h1 = document.querySelector("h1 .hi");
-    var h1Text = h1.textContent;
-    var splitteText = h1Text.split("");
-    var clutter = "";
-    splitteText.forEach(function () {
-        clutter += `<span>${elem}</span>`
-    })
+    var headings = document.querySelectorAll(".hi, .name , h4");
 
-    h1.innerHTML = clutter;
+    headings.forEach(function (h1) {
+        var text = h1.textContent;
+        var letters = text.split("");
+        var half = Math.floor(letters.length / 2);
+        var clutter = " ";
+
+        letters.forEach(function (elem, idx) {
+            if (idx < half) {
+                clutter += `<span class="a">${elem}</span>`;
+            } else {
+                clutter += `<span class="b">${elem}</span>`;
+            }
+        });
+
+        h1.innerHTML = clutter;
+    });
 }
 
 breakTheText();
 
-gsap.from(" hkjkfjk           ", {
-    y: 70,
+gsap.from(".hi .a", {
+    y: 80,
     duraton: 1,
-    delay: 1,
+    delay: 1.5,
     opacity: 0,
     stagger: 0.15,
 })
 
-         
+gsap.from(".hi .b", {
+    y: 80,
+    duraton: 1,
+    delay: 1.5,
+    opacity: 0,
+    stagger: -0.15,
+})
+
+gsap.from(".name .a", {
+    y: 50,
+    duraton: 0.8,
+    delay: 1,
+    opacity: 0,
+    stagger: 0.15,
+    ease: "bounce.out",    
+})
+
+gsap.from(".name .b", {
+    y: 50,
+    duraton: 0.8,
+    delay: 1,
+    opacity: 0,
+    stagger: 0.15,
+    ease: "bounce.out",
+})
+
+gsap.from("h4 .a", {
+    y: 80,
+    duraton: 0.5,
+    delay: 2,
+    opacity: 0,
+    stagger: 0.15,
+})
+
+gsap.from("h4 .b", {
+    y: 80,
+    duraton: 0.5,
+    delay: 2,
+    opacity: 0,
+    stagger: 0.15,
+    
+})
